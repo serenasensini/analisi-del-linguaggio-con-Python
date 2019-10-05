@@ -1,0 +1,26 @@
+from nltk.stem import PorterStemmer
+from nltk.stem import LancasterStemmer
+
+porter = PorterStemmer()
+lancaster=LancasterStemmer()
+print("### Esempi con lo stemmer di Porter")
+print(porter.stem("dogs"))
+print(porter.stem("computer"))
+print(porter.stem("computable"))
+print(porter.stem("compute"))
+print("### Esempi con lo stemmer Lancaster")
+print(lancaster.stem("dogs"))
+print(lancaster.stem("computer"))
+print(lancaster.stem("computable"))
+print(lancaster.stem("compute"))
+
+print("### Esempi con lo stemmer di Porter")
+print(porter.stem("friendship"))
+print(porter.stem("misunderstanding"))
+print(porter.stem("complication"))
+print(porter.stem("basketball"))
+print("### Esempi con lo stemmer Lancaster")
+print(lancaster.stem("friendship"))
+print(lancaster.stem("misunderstanding"))
+print(lancaster.stem("complication"))
+print(lancaster.stem("basketball"))
